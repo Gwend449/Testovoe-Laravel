@@ -22,7 +22,7 @@ class ProductIndexRequest extends FormRequest
     {
         return [
             'q' => 'nullable|string|max:255',
-            'category_id' => 'nullable|integer|exists:categories, id',
+            'category_id' => 'nullable|integer|exists:categories,id',
             'price_from' => 'nullable|numeric|min:1',
             'price_to' => 'nullable|numeric|gte:price_from',
             'in_stock' => 'nullable|in:true,false,1,0',
