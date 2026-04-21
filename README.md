@@ -32,7 +32,7 @@
 > Laravel\
 > PHP\
 > Postgres\
-> Docker\
+> Docker
 
 ## Решения в ходе разработки
 
@@ -48,16 +48,13 @@
    ```bash
    git clone <url_вашего_репозитория>
 
-
 2. **Поднимите docker-контейнеры:**
    ```bash
    docker-compose up -d --build
 
-
 3. **Настройте .env и запустите db:seed:**
    ```bash
    php artisan migrate --seed
-
 
 ### Параметры запроса (Query Parameters)
 
